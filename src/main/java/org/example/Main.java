@@ -15,17 +15,17 @@ public class Main {
         usuario1.setNombreUsuario("Maria");
         usuario1.setApelliUsuario("Perez");
         usuario1.setEmailUsuario("mperez@outlook.com");
-        usuario1.setContraUsuario("654321");
+        usuario1.setContraUsuario("123456");
 
         AD_Usuario adUsuario = new AD_Usuario();
         boolean resultado = adUsuario.insertar(usuario1);
 
-        if (resultado == true) {
+        if (resultado) {
             //se inserto el usuario y lo enviamos al login.jsp
-            System.out.printf("Registrado");
+            System.out.print("Registrado");
         } else {
             //lo redirigimos al mismo formulario
-            System.out.printf("No registrado!");
+            System.out.print("No registrado!");
         }
     }
 }
