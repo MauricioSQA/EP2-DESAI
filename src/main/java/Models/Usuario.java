@@ -17,7 +17,7 @@ public class Usuario {
         this.emailUsuario = emailUsuario;
         this.contraUsuario = contraUsuario;
     }
-
+// setters y getters
     public Integer getIdUsuario() {
         return idUsuario;
     }
